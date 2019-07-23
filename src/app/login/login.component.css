@@ -1,0 +1,43 @@
+
+.login-body{
+    height: 100vh;
+    width: 100%;
+    background-color: #333333;
+    padding-top: 70px; 
+    text-align: center;
+}
+.login-div{
+    margin: auto;
+    width: 400px;;
+    background: #ddd;
+    border-radius: 4px;
+    padding: 50px;
+}
+.login-title{
+    font-size: 25px;
+}
+.input-text{
+    padding-left: 30px;
+    margin: 10px 0px;
+}
+.login-content{
+    text-align: left;
+}
+.email-icon{
+    float: left;
+    position: absolute;
+    margin: 13px;
+    font-size: small;
+}
+.forgot-password{
+    float: left;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+.login-btn{
+    float: right;
+    width: 90px;
+}
+.signup-link{
+    margin-top: 10px;
+}

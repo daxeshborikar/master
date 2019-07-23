@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark" id="header-container" style="background-color:#333" [hidden]="_router.url == '/login' || _router.url == '/signUp'">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">FoodieDevta</a>
+      </div>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="/" [routerLink]="['/']">Home</a>
+            </li>
+            <li>
+                <a (click)="openCategory()" style="color: white"  (mouseover)="showCat=true" (mouseout)="showCat=false">Category</a>
+                <ul class="positionAbsolute" [hidden]="!showCat" (mouseover)="showCat=true" (mouseout)="showCat=false" style="z-index:99">
+                <li><a href="/cafe" class="textLeft" [routerLink]="['/cafe']">Cafe</a></li>
+                <li><a href="/restaurant" class="textLeft" [routerLink]="['/restaurant']">Restaurant</a></li>
+                </ul>
+            </li>
+            <li>
+            <a href="/event" [routerLink]="['/event']">Event</a>
+            </li>
+            <li>
+            <a href="/news" [routerLink]="['/news']">News</a>
+            </li>
+            <li>
+                <a href="/about" [routerLink]="['/about']">About Us</a>
+            </li>
+            <li>
+                <a href="/login" [routerLink]="['/login']">Login</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>

@@ -1,0 +1,10 @@
+.admin-navbar{
+    width: 15%;
+    height: 89vh;
+    background-color: #333333;
+    color: white;
+    float: left;
+}
+.manageRestaurantContainer{
+    width: 85%;
+}
